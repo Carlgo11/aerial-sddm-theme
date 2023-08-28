@@ -203,7 +203,7 @@ Rectangle {
             y: parent.height * config.relativePositionY - clock.height / 2
             x: parent.width * config.relativePositionX - clock.width / 2
             color: "white"
-            timeFont.family: textFont.name
+            timeFont.family: "SF Pro Display Thin" //textFont.name
             dateFont.family: textFont.name
         }
 
@@ -233,7 +233,8 @@ Rectangle {
                     width: parent.width * 0.27
                     height: parent.height * 0.66
                     horizontalAlignment: Text.AlignLeft
-                    font.family: textFont.name
+                    //font.family: textFont.name
+                    font.family: "SF Pro Text Light"
                     font.bold: true
                     font.pixelSize: 16
                     color: "white"
@@ -250,7 +251,8 @@ Rectangle {
                     anchors.leftMargin: config.usernameLeftMargin
                     anchors.right: parent.right
                     anchors.rightMargin: 0
-                    font: textFont.name
+//                    font: textFont.name
+                    font.family: "SF Mono Medium"
                     color: "#25000000"
                     borderColor: "transparent"
                     textColor: "white"
@@ -283,7 +285,7 @@ Rectangle {
                     text: textConstants.password
                     anchors.verticalCenter: parent.verticalCenter
                     horizontalAlignment: Text.AlignLeft
-                    font.family: textFont.name
+                    font.family: "SF Pro Text Light"
                     font.bold: true
                     font.pixelSize: 16
                     color: "white"
@@ -292,7 +294,8 @@ Rectangle {
                 PasswordBox {
                     id: password_input_box
                     height: parent.height
-                    font: textFont.name
+                    //font: textFont.name
+                    font.family: "SF Mono Regular"
                     color: "#25000000"
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.right: parent.right
